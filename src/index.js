@@ -2,30 +2,50 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {Card} from './Card';
+import {webData} from './webdata';
+
+console.log(webData[0]);
 
 ReactDOM.render(
   <>
+  <h1 className="headings">
+    Netflix Show
+  </h1>
   <div className="grid">
       <Card
-        class="card1"
-        imagesrc="https://picsum.photos/200/300" 
-        title="An Amazon Web Series" 
-        sname="Family Man"
-        link="https://www.amazon.com/gp/video/detail/B08BYZMXSP/ref=atv_hm_hom_3_c_0z7Q22_brws_2_1"
+        class={webData[0].class}
+        imagesrc={webData[0].imagesrc}
+        title={webData[0].title} 
+        sname={webData[0].sname}
+        link={webData[0].link}
       />
-      <Card
-        class="card2"
-        imagesrc="https://picsum.photos/id/237/200/300" 
-        title="An Amazon Web Series" 
-        sname="Hidden Secret"
-        link="https://www.amazon.com/gp/video/detail/B08DK1G84T/ref=atv_hm_hom_3_c_0z7Q22_brws_2_3"
+       <Card
+        class={webData[1].class}
+        imagesrc={webData[1].imagesrc}
+        title={webData[1].title} 
+        sname={webData[1].sname}
+        link={webData[0].link}
       />
-      <Card
-        class="card3"
-        imagesrc="https://picsum.photos/seed/picsum/200/300" 
-        title="An Amazon Web Series" 
-        sname="Patal Lok"
-        link="https://www.amazon.com/Badlands/dp/B08BYYXFJL/ref=sr_1_1?dchild=1&keywords=Patal+lok&qid=1598974679&s=instant-video&sr=1-1"
+       <Card
+        class={webData[2].class}
+        imagesrc={webData[2].imagesrc}
+        title={webData[2].title} 
+        sname={webData[2].sname}
+        link={webData[2].link}
+      />
+       <Card
+        class={webData[3].class}
+        imagesrc={webData[3].imagesrc}
+        title={webData[3].title} 
+        sname={webData[3].sname}
+        link={webData[3].link}
+      />
+       <Card
+        class={webData[4].class}
+        imagesrc={webData[4].imagesrc}
+        title={webData[4].title} 
+        sname={webData[4].sname}
+        link={webData[4].link}
       />
   </div>
   </>,
