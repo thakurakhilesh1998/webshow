@@ -15,12 +15,13 @@ ReactDOM.render(
     webData.map((data,index)=>{
       return (
         <Card
-    class={data.class}
-    imagesrc={data.imagesrc}
-    title={data.title} 
-    sname={data.sname}
-    link={data.link}
-  />
+        key={data.id}
+        class={data.class}
+        imagesrc={data.imagesrc}
+        title={data.title} 
+        sname={data.sname}
+        link={data.link}
+      />
 )
   }) }
 
